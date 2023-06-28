@@ -1,0 +1,134 @@
+/* importing google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* variable of color and fonts */
+:root {
+  --Kumbh: "Kumbh Sans", sans-serif;
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-esaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+/* frontend mentor default css */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Dark-cyan);
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./images/bg-pattern-top.svg);
+  background-position:left top -300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+main::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./images/bg-pattern-bottom.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position:right bottom -300px;
+    background-size: contain;
+
+
+    
+}
+
+.card {
+  background-color: red;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  min-height: 300px;
+  border-radius: 15px;
+  position: relative;
+  background: white;
+}
+.card .card-background{
+    width: 350px;
+    height: 150px;
+    background:url(./images/bg-pattern-card.svg);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 15px 15px 0 0;
+}
+
+.card .content h1{
+    text-align: center;
+    font-family: var(--Kumbh);
+    margin-top: 1.5rem;
+    font-size: 18px;
+    color: var(--Very-dark-esaturated-blue);
+    font-weight: 700;
+}
+
+.card .content h1 span{
+    color: var(--Dark-grayish-blue);
+}
+
+.card .content p{
+    font-size: 1rem;
+    font-family: var(--Kumbh);
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    margin-top: 1.5rem;
+}
+
+
+.card .content p{
+    text-align: center;
+}
+
+.card .social-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--Dark-grayish-blue);
+    margin-top: 1.5rem;
+}
+
+.card img{
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 6rem;
+}
+
+.card .social-info .col h2{
+    font-family: var(--Kumbh);
+    font-size: 18px;
+    color: var(--Very-dark-esaturated-blue);
+    text-align: center;
+}
+
+.card .social-info .col p{
+    font-family: var(--Kumbh);
+    font-size: 1rem;
+    color: var(--Very-dark-esaturated-blue);
+    text-align: center;
+}
